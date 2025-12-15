@@ -1,6 +1,295 @@
-body {background:#04041A
-;}
-body {color: white;}
+* {
+  font-family: "Brush Script MT", cursive !important;
+  font-style: italic !important;
+  font-weight: bold !important;
+}
+
+body {background:#FFDFD4; }
+body {color: ;}
 body {font-size: x-large;}
- body h1{text-decoration: underline;}
-h1 {color: pink;}
+
+.contenedor {
+  display: flex;
+  flex-direction: row-reverse; /* imagen izquierda, título derecha */
+  align-items: center;
+  justify-content:space-around;
+  background: #351A13;
+  padding: 20px;
+
+}
+
+.copia {
+color:brown
+}
+
+.original{
+  color:#FCBBBB;
+  font-size: 80px;
+  font-family:
+}
+.peque  {
+width: 35vw;
+height: 35vw;
+}
+
+.navegador{
+display: flex;
+justify-content: space-around;
+background: #D18989;
+margin: 0px;
+padding: 40px;
+
+}
+
+
+
+.halago{
+margin: 100px;
+border: solid;
+border-radius: 20vw;
+color: #4D1616;
+}
+
+.Ingredientes {
+  margin-left: 20px;    /* espacio del borde izquierdo */
+  margin-right: auto;   /* expande a la derecha */
+  max-width: 800px;     /* no ocupa toda la página */
+  padding: 0px;        /* espacio interno para subtítulo y todo */
+}
+.receta {
+  margin-left: 20px;    /* espacio del borde izquierdo */
+  margin-right: auto;   /* expande a la derecha */
+  max-width: 800px;     /* no ocupa toda la página */
+  padding: 0px;        /* espacio interno para subtítulo y todo */
+}
+.padre {
+  display: flex;
+  gap: 25px;
+
+}
+
+.izquierda {
+  flex: 1;          /* grande - ocupa más espacio */
+}
+
+.derecha {
+  flex: 0 0 200px;  /* pequeño - ancho fijo 200px */
+  background:
+#EDA6A6;
+border-radius: 40vw;
+align-items: center;
+
+}
+
+.primera {
+  width: 30vw;
+  height: 35vh;
+}
+.segunda{
+width: 30vw;
+height: 35vh;
+}
+.ter{
+width: 30vw;
+height: 35vh;
+}
+
+
+
+
+.mapa {
+  display: flex;
+  gap: 90px;
+  background: #CF8F8F;
+    padding: 20px;
+    flex-wrap: wrap;
+          /* espacio interno */
+
+}
+.video   {      /* no toca flotantes */
+width: 400px;
+height: 300px;
+}
+.gps{
+width: 400px;
+height: 300px;
+ }
+.nose {
+  padding: 20px;
+  background:#CF8F8F;
+  flex-wrap: wrap;
+   }
+   .layout-pagina {
+  display: flex;
+  gap: 50px; /* Espacio grande entre card y contenido */
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card-izquierdo {
+  width: 400px;      /* Mediano */
+  flex-shrink: 0;    /* No se encoge */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+  background: #f0f0f0;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  flex-wrap: wrap;
+}
+
+.elemento {
+  padding: 15px;
+  background: white;}
+
+
+.container {
+display: flex
+
+}
+
+.uno  {
+  width: 300px;
+  height: 200px;}
+
+  .dos  {
+    width: 300px;
+    height: 200px;}
+
+    .tres {
+      width: 300px;
+      height: 200px;}
+
+      .cuatro {
+        width: 300px;
+        height: 200px;}
+
+        .whatsapp-flotante {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .whatsapp-flotante:hover {
+    transform: scale(1.1);
+    background: #128C7E;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+  }
+
+  .whatsapp-flotante svg {
+    width: 35px;
+    height: 35px;
+  }
+  .botones-color {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 999;
+  }
+
+  .btn-color {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+
+  .btn-color:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  }
+
+  /* Colores de cada botón */
+  .btn-color[data-color="#ff6b6b"] { background: #ff6b6b; }
+  .btn-color[data-color="#4ecdc4"] { background: #4ecdc4; }
+  .btn-color[data-color="#45b7d1"] { background: #45b7d1; }
+  .btn-color[data-color="#feca57"] { background: #feca57; color: #333; }
+  .btn-color[data-color="#a8e6cf"] { background: #a8e6cf; color: #333; }
+
+
+  #btn-dark-mode-solo {
+  position: fixed;
+  top: 200px;
+  left: 20px;
+  padding: 15px 25px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+#btn-dark-mode-solo:hover {
+  background: #222;
+  transform: scale(1.05);
+}
+body.dark-mode {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode * {
+  color: #ffffff !important;
+}
+
+body.dark-mode .card,
+body.dark-mode .elemento,
+body.dark-mode .control-fondo {
+  background: #2d2d2d !important;
+  color: #ffffff !important;
+}
+#btn-webmaster {
+  position: fixed;
+  bottom: 20px;      /* Borde inferior */
+  left: 20px;        /* Borde izquierdo */
+  padding: 10px 20px;
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+#btn-webmaster:hover {
+  background: #004c99;
+}
+
+#webmaster-box {
+  position: fixed;
+  bottom: 70px;      /* Justo encima del botón */
+  left: 20px;        /* Mismo borde izquierdo */
+  width: 260px;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  display: none;     /* Oculto al inicio */
+  z-index: 1000;
+  font-size: 14px;
+}
